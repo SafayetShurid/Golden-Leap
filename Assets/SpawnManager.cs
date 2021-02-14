@@ -88,7 +88,7 @@ public class SpawnManager : MonoBehaviour
             dir = centreGameObject.position - _coin.transform.position;
             rb.AddForce(dir * meteorSpeedLeft, ForceMode2D.Impulse);
             meteorSpeedLeft = Random.Range(2.8f, 3.1f);
-            m_r2 = Random.Range(4f, 7f);
+            m_r2 = Random.Range(12f, 14f);
         }
     }
 
@@ -105,8 +105,8 @@ public class SpawnManager : MonoBehaviour
             Rigidbody2D rb = _coin.GetComponent<Rigidbody2D>();
             dir = centreGameObject.position - _coin.transform.position;
             rb.AddForce(dir * speedLeft, ForceMode2D.Impulse);
-            speedLeft = Random.Range(1.8f, 2.2f);
-            r1 = Random.Range(1f, 3f);
+            speedLeft = Random.Range(1.5f, 2.5f);
+            r1 = Random.Range(1f, 2f);
         }
 
     }
@@ -125,7 +125,7 @@ public class SpawnManager : MonoBehaviour
             dir = centreGameObject.position - _coin.transform.position;
             rb.AddForce(dir * speedRight, ForceMode2D.Impulse);
             r2 = Random.Range(1f, 3f);
-            speedRight = Random.Range(1.8f, 2.2f);
+            speedRight = Random.Range(1.5f, 2.5f);
         }
 
     }
@@ -143,8 +143,8 @@ public class SpawnManager : MonoBehaviour
             Rigidbody2D rb = _coin.GetComponent<Rigidbody2D>();
             dir = centreGameObject.position - _coin.transform.position;
             rb.AddForce(dir * speedCenter, ForceMode2D.Impulse);
-            r3 = Random.Range(1f, 3f);
-            speedCenter = Random.Range(2.8f, 3.2f);
+            r3 = Random.Range(1f, 2f);
+            speedCenter = Random.Range(2.5f, 3.5f);
         }
 
     }
@@ -162,8 +162,8 @@ public class SpawnManager : MonoBehaviour
             Rigidbody2D rb = _coin.GetComponent<Rigidbody2D>();
             dir = centreGameObject.position - _coin.transform.position;
             rb.AddForce(dir * speedRight2, ForceMode2D.Impulse);
-            r4 = Random.Range(1f, 3f);
-            speedRight2 = Random.Range(2.8f, 3.2f);
+            r4 = Random.Range(1f, 2f);
+            speedRight2 = Random.Range(2.5f, 3.5f);
         }
 
     }

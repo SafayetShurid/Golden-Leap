@@ -33,13 +33,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+       /* if (Input.GetMouseButtonDown(0))
         {
             Vector3 dir = target.position - transform.position;
             Debug.Log(dir);
             Debug.Log(dir.normalized);
             rb.AddForce(dir * speed);
-        }
+            GameManager.instance.PlayRailJumpSound() ;
+        }*/
 
 
         if (transform.localPosition.x<0f)
@@ -95,6 +96,7 @@ public class Player : MonoBehaviour
         {
             Vector3 dir = target.position - transform.position;          
             rb.AddForce(dir * speed);
+            GameManager.instance.PlayRailJumpSound();
         }
            
         
